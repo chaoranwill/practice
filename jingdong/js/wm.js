@@ -281,7 +281,7 @@ window.data.userPicData = [
 ];
 
 (function () {
-
+	lib.ScreenSystem(document.getElementById("layout"));
 	var layout = document.querySelector( "#layout" );
 
 	var pages = document.querySelectorAll( ".page" );
@@ -854,13 +854,13 @@ window.data.userPicData = [
 
 
 
-	setTimeout( function () {
+	/* setTimeout( function () {
 
 		document.body.removeChild( document.querySelector( ".page-loading" ) );
 
 		lib.ScreenSystem( document.getElementById( "layout" ) );
 
-	}, 1000 );
+	}, 0 ); */
 
 
 
