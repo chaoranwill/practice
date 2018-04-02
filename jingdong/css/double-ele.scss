@@ -630,7 +630,7 @@ body {
 .page-7 {
     background: url(../img/page7_bg.png) no-repeat;
     background-size: 100% auto;
-    background-position: bottom center;
+    background-position: bottom;
     img {
         @include ab-center()
     }
