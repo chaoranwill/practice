@@ -108,7 +108,7 @@
     <!-- <audio loop></audio> -->
 
     <div class="music-logo"></div>
-
+   
     <div id="layout">
 
 
@@ -189,7 +189,21 @@
         </div>
 
     </div>
-
+    <div class="page-loading">
+    
+        <ul class="border">
+    
+            <li></li>
+    
+            <li></li>
+    
+            <li></li>
+    
+            <li></li>
+    
+        </ul>
+    
+    </div>
     <div id="template">
 
         <!--地图页-->
@@ -242,6 +256,13 @@
             if (!doc.addEventListener) return;
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
+            setTimeout(function () {
+
+                document.body.removeChild(document.querySelector(".page-loading"));
+
+                lib.ScreenSystem(document.getElementById("layout"));
+
+            }, 1000);
         })(window, document)
         
         function share() {
