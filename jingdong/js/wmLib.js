@@ -16,7 +16,7 @@
 
 
 
-	window.template = Z.HTMLTemplate( document.getElementById( "template" ) );
+	// window.template = Z.HTMLTemplate( document.getElementById( "template" ) );
 
 
 
@@ -72,11 +72,11 @@
 
 
 
-	template.addHandler( {
+	/* template.addHandler( {
 
 		img : FieldImg( centerImg )
 
-	} );
+	} ); */
 
 
 
@@ -485,10 +485,6 @@
 			pages.push( page );
 
 			Z.removeNode( page );
-
-			// document.body.removeChild(document.querySelector(".page-loading"));
-
-			// lib.ScreenSystem(document.getElementById("layout"));
 
 		} );
 
