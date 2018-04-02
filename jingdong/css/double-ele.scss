@@ -456,6 +456,7 @@ body {
 .page-1 {
     background: url(../img/page1_bg.png) #F25A06 no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     
     img {
         @include ab-center()
@@ -487,6 +488,7 @@ body {
 .page-2 {
     background: url(../img/page2_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
@@ -507,6 +509,7 @@ body {
 .page-3 {
     background: url(../img/page3_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
@@ -531,6 +534,7 @@ body {
 .page-4 {
     background: url(../img/page4_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
@@ -553,6 +557,7 @@ body {
 .page-5 {
     background: url(../img/page5_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
@@ -575,6 +580,7 @@ body {
 .page-6 {
     background: url(../img/page6_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
@@ -624,6 +630,7 @@ body {
 .page-7 {
     background: url(../img/page7_bg.png) no-repeat;
     background-size: 100% auto;
+    background-position: bottom center;
     img {
         @include ab-center()
     }
