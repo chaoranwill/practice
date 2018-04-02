@@ -179,7 +179,7 @@
             <img src="img/logo.png" class="page-logo">
             
             <img src="img/content_7.png" class="page-content">
-            <div class="bt_share">
+            <div class="bt_share" onclick="share">
                 <img class="bt_share_img" src="img/bt_share.png">
                 <img class="arrow-left" src="img/arrow-left.png">
             </div>
@@ -211,9 +211,12 @@
         </div>
 
     </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    
     <script>
+        var isMob;
         (function (win, doc) {
-            var isMob = !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
+            isMob = !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
             var docEl = doc.documentElement,
                 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
                 recalc = function () {
@@ -240,8 +243,13 @@
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(window, document)
+        
+        function share() {
+            if (isMob) {
+                alert('sorry, this is a test ~');
+            }
+        }
     </script>
-    <script src="js/jquery-1.10.2.min.js"></script>
 
     <script src="js/zMobile.js?v=20141202042"></script>
 
