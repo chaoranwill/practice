@@ -630,31 +630,25 @@ body {
 .page-7 {
     background: url(../img/page7_bg.png) #EF8560 no-repeat;
     background-size: 100% auto;
-    background-position-x: 0 ;
-    background-position-y:  - rem(150);
+    background-position: bottom center;
     img {
         @include ab-center()
     }
     .page-content {
         width: rem(650);
-        // bottom: rem(778);
-        // top: auto;
+        bottom: rem(778);
         height: auto;
     }
     .page-back {
         width: rem(455);
         height: auto;
-        // bottom: rem(245); 
-        top: rem(485);
-        bottom: auto;
+        bottom: rem(245); 
         animation: music-move 5s 0s infinite alternate ease-in-out; 
     }
     .page-back-side {
         width: rem(576);
         height: auto;
-        // bottom: rem(205); 
-        top: rem(425);
-        bottom: auto;
+        bottom: rem(205); 
         animation: 3s jump ease-out infinite;
     }
     .bt_share {
