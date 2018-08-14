@@ -8,5 +8,32 @@
 </head>
 <body>
   <a href="tel:10086">打电话呀</a>
+  <button>download</button>
 </body>
+<script>
+  function saveimage() {
+    console.log('xiazaila')
+    var that = this
+    wx.miniProgram.downloadImage({
+        url: 'http://5b0988e595225.cdn.sohucs.com/images/20171112/993286e58d5741ceb565c58165d4af5e.jpeg',
+        type: 'image',
+        success: function (res) 
+        {
+          console.log("download success");
+          console.log(res);
+          that.setData({
+            img_l: res.tempFilePath
+          })
+        },
+        fail: function (res) 
+        {
+          console.log("download fail");
+        },
+        complete: function (res) 
+        {
+          console.log("download complete");
+        }
+    })
+  }
+</script>
 </html>
